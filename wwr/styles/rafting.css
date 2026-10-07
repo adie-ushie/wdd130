@@ -393,3 +393,327 @@ footer p {
     width: 35px;
     height: 35px;
 }
+
+/* =========================
+   HOME PAGE
+   ========================= */
+
+.home-hero {
+    position: relative;
+}
+
+.home-hero > img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.home-hero h1 {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    background-color: rgba(11, 57, 84, 0.9);
+    color: white;
+}
+
+.welcome {
+    text-align: center;
+    padding: 25px 50px;
+}
+
+.welcome h2 {
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 20px 20px 30px;
+}
+
+.home-card {
+    background-color: var(--accent1-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.home-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.home-card div {
+    padding: 15px;
+}
+
+.home-card h2 {
+    margin-bottom: 10px;
+}
+
+.home-card p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+.home-cta {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 30px 20px;
+    margin: 20px;
+}
+
+.home-cta h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.home-cta p {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: white;
+}
+
+.newsletter {
+    background-color: var(--accent1-color);
+    margin: 30px 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.newsletter p {
+    max-width: 650px;
+    margin: 0 auto 15px;
+}
+
+.newsletter form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 10px;
+    align-items: end;
+}
+
+.newsletter label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.newsletter button {
+    padding: 10px 18px;
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* =========================
+   TRIPS PAGE
+   ========================= */
+
+.trips-intro {
+    text-align: center;
+    padding: 30px 50px;
+}
+
+.trips-intro h1 {
+    margin-bottom: 15px;
+}
+
+.trips-intro p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.trip-card {
+    background-color: var(--accent1-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.trip-card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.trip-card div {
+    padding: 15px;
+}
+
+.trip-card h2 {
+    margin-bottom: 10px;
+}
+
+.trip-card p {
+    margin: 8px 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.trip-table-section {
+    margin: 35px 20px;
+}
+
+.trip-table-section h2 {
+    margin-bottom: 20px;
+}
+
+.trip-table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.trip-table-section th,
+.trip-table-section td {
+    border: 1px solid var(--primary-color);
+    padding: 12px;
+    text-align: left;
+}
+
+.trip-table-section th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table-section tr:nth-child(even) {
+    background-color: var(--accent1-color);
+}
+
+.trip-cta {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 30px 20px;
+    margin: 20px;
+}
+
+.trip-cta h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.trip-cta p {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE LAYOUT
+   ========================= */
+
+@media (max-width: 850px) {
+
+    header,
+    main,
+    footer {
+        width: 100%;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trip-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter form {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter label {
+        margin-top: 8px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    header img {
+        margin: 0 auto 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .home-hero > img {
+        height: 300px;
+    }
+
+    .home-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-main {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-gallery {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+}
